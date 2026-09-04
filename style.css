@@ -126,8 +126,8 @@
 input {
     border-style: none;
     text-align: center;
+    outline: none;
 }
-
 
 
 .email_button {
