@@ -8,6 +8,9 @@
 
 }   
 
+.bold {
+    font-weight: bold;
+}
 
 .container {
     padding: 96px 0;
@@ -175,7 +178,7 @@ input {
 }
 
 
-.email_button {
+.email_button{
     z-index: 2;
     margin: 8px;
     height: calc(100% - 16px);
@@ -234,13 +237,13 @@ input {
     color: #6100FB;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-weight: 900;
+    font-weight: bold;
     text-align: center;
 }
 
 .section__title {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
     margin-top: 8px;
     margin-bottom: 32px;
@@ -249,10 +252,15 @@ input {
 .section__para {
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
     margin-bottom: 32px;
     color: rgba(105, 105, 105, 0.89);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
+
+
+
 
 .feature__row {
     display: flex;
@@ -283,7 +291,7 @@ input {
 
 .feature__title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     color: rgb(36, 62, 99);
 }
 
@@ -307,6 +315,80 @@ input {
 }
 
 /* Features Container End */
+
+
+
+/* Quality Work Container Start */
+
+.quality_work {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.quality_button{
+   background-color:#6100FB;
+   padding: 10px 30px;
+   border-radius: 40px;
+   color:white;
+   white-space: nowrap;
+    
+
+}
+
+
+
+.quality_img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    margin: 0 56px;
+    flex: 1;
+}
+
+.quality_img {
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.quality_desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    margin-right: 48px;
+    flex: 1;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
+    z-index: 0;
+}
+
+#quality_work h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    
+}
+
+/* Quality Work Container End */
+
+
 
 
 /* @Medias Start*/
