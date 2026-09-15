@@ -22,9 +22,60 @@
                             <li><a href="#" class="nav__link">Blog</a></li>
                             <li><a href="#" class="nav__link">Pricing</a></li>
                             <li><a href="#" class="nav__link">Contact Us</a></li>
-                            <li><a href="#" class="nav__link link--login">Login</a></li>
-                            <li><a href="#" class="nav__link sign_up">Sign up</a></li>
+                            <div class="nav_right--wrapper">
+                                <li><a href="#" class="nav__link link--login">Login</a></li>
+                                <li><a href="#" class="nav__link sign_up">Sign up</a></li>
+                            </div>
                         </ul>
+                        <button class="menu_button" onclick="openMenu()" aria-label="Open menu">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mobile_menu">
+                        <button
+                            class="menu_button mobile_menu__close"
+                            onclick="closeMenu()"
+                            aria-label="Close menu"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+
+                        <div class="mobile_menu__links">
+                            <a href="#about" class="mobile_menu__link" onclick="closeMenu()">About</a>
+                            <a href="#blog" class="mobile_menu__link" onclick="closeMenu()">Blog</a>
+                            <a href="#Pricing" class="mobile_menu__link" onclick="closeMenu()">Pricing</a>
+                            <a href="#contact_us" class="mobile_menu__link" onclick="closeMenu()">Contact Us</a>
+                            <a href="#login" class="mobile_menu__link" onclick="closeMenu()">Login</a>
+                            <a href="#signup" class="mobile_menu__link mobile_menu__link--primary" onclick="closeMenu()">Sign up</a>
+                        </div>
+
                     </div>
                 </nav>    
             </div>
@@ -283,7 +334,7 @@
                 <div class="row">
                     <div class="Pricing_desc">
                         <h3 class="purple bold">PRICING</h3>
-                        <h2 class="bigtext bold pricing_title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
+                        <h2 class="bigtxt bold pricing_title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
                         <h3 class="grey pricing_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
                     </div>
                     <div class="plans">
@@ -379,7 +430,7 @@
                             </h2>
                             <div class="rating_prof_director">
                                 <div class="director_imgdesc--wrapper">
-                                    <img class="testi_profimg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80" class="testimonial__img">
+                                    <img class="testi_profimg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3.25&amp;w=512&amp;h=512&amp;q=80">
                                     <div class="director_desc">
                                         <div class="director_name bold">Charlotte Hale</div>
                                         <div class="director_desc">Director, Delos Inc.</div>
@@ -484,5 +535,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
